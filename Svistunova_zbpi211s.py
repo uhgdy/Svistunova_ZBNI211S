@@ -1,3 +1,4 @@
+import json
 #1
 def fact(x):
     if (x <= 1):
@@ -55,7 +56,7 @@ def calculate(path2file):
     return string
 
 #7
-def substring_slice(path2file_1,path2file_2):
+def substring_slice(path2file_1, path2file_2):
     string=""
     with open(path2file_1) as file:
         array_1 = [row.strip() for row in file]
@@ -88,13 +89,11 @@ def decode_ch(sting_of_elements):
 
 #9
 class Student:
-    fullname = ""
-    grades = [3,5,5]
 
-    def __init__(self, name, surname, grades):
+    def __init__(self, name, surname, grades = [3,5,5]):
         self.name = name
         self.surname = surname
-        Student.fullname = name + " " + surname
+        self.fullname = name + " " + surname
         self.grades = grades
 
     def greeting():
