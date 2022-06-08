@@ -123,15 +123,15 @@ class MyError(Exception):
     def __init__(self, msg):
         self.msg = msg
 
-buf = input("Password: ")
+#buf = input("Password: ")
 
-try:
-    buf = int(buf)
-    if buf != 12345:
-        raise MyError("invalid password")
-except ValueError:
-    print("Error type of value!")
-except MyError as mr:
-    print(mr)
-else:
-    print(buf)
+#try:
+#    buf = int(buf)
+#    if buf != 12345:
+#        raise MyError("invalid password")
+#except ValueError:
+#    print("Error type of value!")
+#except MyError as mr:
+#    print(mr)
+#else:
+#    print(buf)
