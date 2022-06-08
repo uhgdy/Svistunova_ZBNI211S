@@ -103,8 +103,7 @@ class Student:
         return sum(self.grades)/len(self.grades)
 
     def is_otlichnik(self):
-        buf = float(self.mean_grade())
-        if (buf >= 4.5):
+        if self.mean_grade()>=4.5:
             return "YES"
         else:
             return "NO"
